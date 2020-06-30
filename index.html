@@ -37,6 +37,7 @@
 <script>
     const hero = document.querySelector('.hero');
     const text = document.querySelector('h1');
+    const walk = 100; // 100 pixels
 
     // console.log shows the event, which here is us moving our mouse over the hero text
     function shadow(e) {
@@ -56,6 +57,10 @@
             x = x + e.target.offsetLeft;
             y = y + e.target.offsetTop;
         }
+        const xWalk = (x / width * walk - (walk / 2);
+        
+        // console.log(x, y);
+
         
     };
 
