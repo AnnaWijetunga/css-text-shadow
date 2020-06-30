@@ -62,10 +62,19 @@
 
         // so that xWalk and yWalk are dynamic
         text.style.textShadow = `${xWalk}px ${yWalk}px 0 red`;
+
+        text.style.textShadow = `
+
+
+        `;
     };
 
     /// tracks when mouse is moved over the hero text
     hero.addEventListener('mousemove', shadow)
+
+    // root of the lesson
+    // when dealing with events, you can use offsetX and offsetY to get the position where your cursor is 
+    // if you have nested elements inside, you sometimes have to a little math to deal with it
 
 </script>
 </body>
