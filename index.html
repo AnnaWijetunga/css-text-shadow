@@ -49,7 +49,10 @@
         // we want to grab the mouse "coordinates"
         let { offsetX: x, offsetY: y } = e;
 
-        console.log(x, y);
+        // this = hero, target will be the thing you hover over
+        console.log(this, e.target);
+        if(this !== e.target);
+        
     };
 
     /// tracks when mouse is moved over the hero text
