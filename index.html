@@ -51,7 +51,11 @@
 
         // this = hero, target will be the thing you hover over
         console.log(this, e.target);
-        if(this !== e.target);
+        // if these two don't equal each other, then:
+        if(this !== e.target) {
+            x = x + e.target.offsetLeft;
+            y = y + e.target.offsetTop;
+        }
         
     };
 
