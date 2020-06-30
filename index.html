@@ -43,7 +43,10 @@
         console.log(e);
         // const width = hero.offsetWidth;
         // const height = hero.offsetHeight;
+        // destructuring version below
         const { offsetWidth: width, offsetHeight: height } = hero;
+        // e.offsetX, e.offsetY, below is the same
+        let { offsetX: x, offsetY: y } = e;
     };
 
     /// tracks when mouse is moved over the hero text
