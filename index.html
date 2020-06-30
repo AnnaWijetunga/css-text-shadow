@@ -40,13 +40,16 @@
 
     // console.log shows the event, which here is us moving our mouse over the hero text
     function shadow(e) {
-        console.log(e);
+        // console.log(e);
         // const width = hero.offsetWidth;
         // const height = hero.offsetHeight;
         // destructuring version below
         const { offsetWidth: width, offsetHeight: height } = hero;
         // e.offsetX, e.offsetY, below is the same
+        // we want to grab the mouse "coordinates"
         let { offsetX: x, offsetY: y } = e;
+
+        console.log(x, y);
     };
 
     /// tracks when mouse is moved over the hero text
